@@ -1,24 +1,11 @@
-# README
+Demo app for [Rack::Timeout::Select](https://github.com/mkrl/rack-timeout)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Download, run `bundle install` and follow those URLs:
 
-Things you may want to cover:
+```
+/short - fast request
+/long - long request that exceeds Rack::Timeout service_timeout but still gets rendered
+/failing - long request that exceeds Rack::Timeout service_timeout and fails
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Configure in `config/initializers/rack_timeout.rb`
