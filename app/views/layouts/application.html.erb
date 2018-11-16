@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing Rails request timeouts</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <hr>
+    <h2><%= yield %></h2>
+    <hr>
+    <ul>
+      <li><%= link_to 'See the fast request', short_path %></li>
+      <li><%= link_to 'See the slow failing request', failing_path %></li>
+      <li><%= link_to 'See the slow working request', long_path %></li>
+    </ul>
+  </body>
+</html>
