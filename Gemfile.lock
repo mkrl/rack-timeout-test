@@ -1,7 +1,8 @@
-PATH
-  remote: ../rack-timeout
+GIT
+  remote: git://github.com/mkrl/rack-timeout.git
+  revision: 2f9f7169074d91d877a1d44d6dc6be11cf04aa43
   specs:
-    rack-timeout (0.5.2)
+    rack-timeout (0.5.1)
 
 GEM
   remote: https://rubygems.org/
